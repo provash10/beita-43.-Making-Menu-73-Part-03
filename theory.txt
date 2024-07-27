@@ -1,0 +1,126 @@
+43. Making Menu 73 Part 03
+
+<link href="css/style.css" rel="stylesheet"/>
+==================================================
+    ul#menu{
+        width: 960px;
+    background-color: #4E4E4E;
+    
+    ul#menu li a{
+    background-color: #4E4E4E;
+    /* background-color: blue; */
+
+    ul#menu{
+        background-color: #4E4E4E;
+    border-bottom: 5px solid orangered;
+    min-height: 38px;
+
+    ul#menu li{
+        /* border-right: 3px solid red; */
+    border-right: 3px solid #605B5B;
+    border-left: 3px solid #2B2A2A;
+==================================
+Menu create korar jonno <ul> </ul> use korte hobe
+
+###Default
+ul#menu{
+    padding: 0;
+}
+
+============================================
+######## 
+ul#menu{
+    padding: 0;
+    /* margin: 0; */
+    list-style-type: none;
+}
+ul#menu li{
+    /* display: inline; */
+    float:left;
+    border-right: 3px solid white;
+}
+
+ul#menu li a{
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #4E4E4E;
+    background-color: blue;
+    padding: 10px 20px;
+    display:block; 
+}
+
+***** float:left; dile list-style-type: none korte hobe.
+***** ul#menu li{ border-right: 3px solid white;  dile ul#menu li a{ display:block; korte hove
+
+=========================================
+ul#menu li:last-child{
+    border-right: none;
+}
+
+ul#menu li :first-child{
+    border-left: none;
+}
+
+===========================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43. Making Menu 73 Part 03</title>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JS</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">WP</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Service</a></li>
+    </ul>
+</body>
+</html>
+==========================================
+ul#menu{
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    width: 960px;
+    background-color: #4E4E4E;
+    border-bottom: 5px solid orangered;
+    min-height: 38px;
+}
+ul#menu li{
+    /* display: inline; */
+    float:left;
+    /* border-right: 3px solid red; */
+    border-right: 3px solid #605B5B;
+    border-left: 3px solid #2B2A2A;
+    /* border-bottom: 5px solid orangered; */
+}
+
+ul#menu li:last-child{
+    border-right: none;
+}
+
+ul#menu li :first-child{
+    border-left: none;
+}
+
+ul#menu li a{
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #4E4E4E;
+    /* background-color: blue; */
+    padding: 10px 20px;
+    display:block; 
+
+    transition: all 3s ease;
+}
+
+ul#menu li a:hover{
+    background-color: orange;
+}
